@@ -9,9 +9,9 @@ const app = express();
 const db = mysql.createConnection({
   url: process.env.MYSQL_URL,         // 从环境变量中获取数据库主机地址
   database: process.env.MYSQLDATABASE,     // 从环境变量中获取数据库名称
-  host: process.env.MYSQL_HOST,         // 从环境变量中获取数据库主机地址
+  host: process.env.MYSQLHOST,         // 从环境变量中获取数据库主机地址
   password: process.env.MYSQLPASSWORD, // 从环境变量中获取数据库密码
-  password: process.env.MYSQLPROT, // 从环境变量中获取数据库密码
+  port: process.env.MYSQLPORT, // 从环境变量中获取数据库密码
   user: process.env.MYSQLUSER,         // 从环境变量中获取数据库用户名
 });
 
